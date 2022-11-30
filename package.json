@@ -39,5 +39,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "antd": "^5.0.2",
+    "eslint": "^8.28.0",
+    "react-hook-form": "^7.40.0",
+    "styled-components": "^5.3.6",
+    "yup": "^0.32.11"
   }
 }
