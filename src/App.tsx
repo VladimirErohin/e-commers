@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const a = 1;
+  const a= 1;
+  console.log(a)
 
   return (
     <div className="App">
