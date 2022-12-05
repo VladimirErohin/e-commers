@@ -23,7 +23,7 @@
     "jsx-a11y"
   ],
   "rules": {
-    //"no-unused-vars": "warn",
+    "no-unused-vars": "warn",
     "no-console": "warn",
     "quotes": ["error", "double"],
     "jsx-quotes": ["error", "prefer-double"],
