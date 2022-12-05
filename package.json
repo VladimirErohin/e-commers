@@ -36,10 +36,7 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx)": [
-      "npm run lint",
-      "git add"
-    ]
+    "*.{js,ts,tsx}": "./node_modules/.bin/eslint"
   },
   "browserslist": {
     "production": [
