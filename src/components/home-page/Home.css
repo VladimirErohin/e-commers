@@ -1,0 +1,87 @@
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /*сдвинули к центру logo/phone*/
+    flex-basis: 0; /*сдвинули к центру logo/phone*/
+
+    text-transform: uppercase;
+    padding: 34px 0;
+}
+
+.language-toggle {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.ellipse {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.language-item {
+    cursor: pointer;
+}
+
+.language-active {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.language,
+.login-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.language-item:nth-child(2) {
+    margin-left: 24px;
+}
+
+.logo {
+    font-family: 'Rany', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 32px;
+
+    
+}
+
+.list-items{
+    display: flex;
+    align-items: center;
+}
+
+.search-btn{
+    margin-left: 60px;
+}
+
+.like-btn,
+.basket-btn{
+    margin-left: 28px;
+}
+
+.wall-paper-main {
+    position: absolute;
+    z-index: 10;
+
+    background-image: url("../../assets/wallpaper-main.png");
+    width: 100%;
+    height: 1080px;
+}

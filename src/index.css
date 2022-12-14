@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color:#333;
+}
+
+.container{
+  max-width: 1920px; /*максимальная ширина или столько сколько есть места(задаем для адаптива)*/
+  margin: 0 auto; /*по центру*/
+  padding: 0 80px; /* не по плану*/
+
+  border: orange solid 1px;
+}
