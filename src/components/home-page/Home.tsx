@@ -3,6 +3,8 @@ import "./Home.css";
 import search from "../../assets/search-icon.png";
 import like from "../../assets/like-icon.png";
 import basket from "../../assets/basket-icon.png";
+import centerImage from "../../assets/center-picture.png";
+import wallPaper from "../../assets/wallpaper-main.png";
 
 export function Home() {
 
@@ -56,7 +58,10 @@ export function Home() {
         </div>
       </header>
       <div className="wall-paper-main">
-
+        <img src={wallPaper} className="wall-paper-image" alt=""/>
+        <div className="center-picture">
+          <img src={centerImage} className="center-image" alt=""/>
+        </div>
       </div>
     </div>
   )
