@@ -61,8 +61,17 @@ export function Home() {
         <img src={wallPaper} className="wall-paper-image" alt=""/>
         <div className="center-picture">
           <img src={centerImage} className="center-image" alt=""/>
+          <div className="bottom-panel">
+            <div className="btn-panel">
+              <div className="btn-explore">explore collections</div>
+              <div className="shop-now">shop now</div>
+            </div>
+            <div className="picture-title">Simple. Timeless.</div>
+          </div>
+
         </div>
       </div>
+
     </div>
   )
 }

@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'harmondextra_bold_expanded';
+    src: url('../../fonts/harmond-extraboldexpanded-webfont.woff2') format('woff2'),
+    url('../../fonts/harmond-extraboldexpanded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 header {
     width: 100%;
     position: absolute;
@@ -85,7 +94,7 @@ header {
     /*height: 1080px;*/
 }
 
-.wall-paper-image{
+.wall-paper-image {
     width: 100%;
     position: relative;
     /*z-index: 10;*/
@@ -94,14 +103,50 @@ header {
 .center-picture {
     position: absolute;
     z-index: 11;
-    top: 9rem;
-    height: 74%;
     display: flex;
-    /*margin-top: 4.5rem;*/
-    /* padding: 138px 250px; */
+    padding: 8rem 20rem 100px;
     justify-content: center;
-}
+    top: 1rem;
+    align-items: flex-end;
 
-.center-image{
     width: 100%;
 }
+
+.center-image {
+    width: 100%;
+}
+
+.bottom-panel {
+    position: absolute;
+    z-index: 12;
+}
+
+.btn-panel {
+    display: flex;
+}
+
+.btn-explore,
+.shop-now {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FBFBFB;
+
+    border: solid 1px #FBFBFB;
+    padding: 25px 0;
+    width: 292px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-title {
+    font-family: 'harmondextra_bold_expanded';
+    font-weight: 800;
+    font-size: 60px;
+    color: #FBFBFB;
+}
+
