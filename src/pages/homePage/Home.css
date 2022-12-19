@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'harmondextra_bold_expanded';
-    src: url('../../fonts/harmond-extraboldexpanded-webfont.woff2') format('woff2'),
-    url('../../fonts/harmond-extraboldexpanded-webfont.woff') format('woff');
+    src: url('../../../public/fonts/harmond-extraboldexpanded-webfont.woff2') format('woff2'),
+    url('../../../public/fonts/harmond-extraboldexpanded-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
