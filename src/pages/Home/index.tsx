@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React, {FC, useState} from "react";
 import "./Home.css";
-import search from "../../assets/search-icon.png";
-import like from "../../assets/like-icon.png";
-import basket from "../../assets/basket-icon.png";
-import centerImage from "../../assets/center-picture.png";
-import wallPaper from "../../assets/wallpaper-main.png";
+import search from "../../images/search-icon.png";
+import like from "../../images/like-icon.png";
+import basket from "../../images/basket-icon.png";
+import centerImage from "../../images/center-picture.png";
+import wallPaper from "../../images/wallpaper-main.png";
 
-export function Home() {
+const Home:FC = ()=> {
 
   const [language, setLanguage] = useState<boolean>(true);
 
@@ -16,7 +16,7 @@ export function Home() {
         <div className="container">
           <nav className="nav">
             <ul className="language-toggle">
-              <li className="language-item" onClick={()=>setLanguage(true)}>
+              <li className="language-item" onClick={() => setLanguage(true)}>
                 {language ?
                   <div>
                     <div className="ellipse"></div>
@@ -25,7 +25,7 @@ export function Home() {
                   : <div className="language">en</div>
                 }
               </li>
-              <li className="language-item" onClick={()=>setLanguage(false)}>
+              <li className="language-item" onClick={() => setLanguage(false)}>
                 {!language ?
                   <div>
                     <div className="ellipse"></div>
@@ -46,11 +46,11 @@ export function Home() {
                 <a className="search-btn">
                   <img className="search-image" src={search} alt="search-picture"/>
                 </a>
-                <a  className="like-btn">
-                  <img className="search-image" src={like} alt="like-picture"/>
+                <a className="like-btn">
+                  <img className="search-image" src='' alt="like-picture"/>
                 </a>
                 <a className="basket-btn">
-                  <img className="search-image" src={basket} alt="basket-picture"/>
+                  <img className="search-image" src='' alt="basket-picture"/>
                 </a>
               </div>
             </div>
@@ -58,9 +58,9 @@ export function Home() {
         </div>
       </header>
       <div className="wall-paper-main">
-        <img src={wallPaper} className="wall-paper-image" alt=""/>
+        <img src='' className="wall-paper-image" alt="main wall paper"/>
         <div className="center-picture">
-          <img src={centerImage} className="center-image" alt=""/>
+          <img src='' className="center-image" alt="center wall paper"/>
           <div className="bottom-panel">
             <div className="btn-panel">
               <div className="btn-explore">explore collections</div>
@@ -75,3 +75,6 @@ export function Home() {
     </div>
   )
 }
+
+
+export default Home;

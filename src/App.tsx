@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import {Counter} from "./components/Counter";
-import {Home} from "./pages/homePage/Home";
+import Home from "./pages/Home/index";
 
 function App() {
 
