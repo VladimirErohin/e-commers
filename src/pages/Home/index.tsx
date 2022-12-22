@@ -1,10 +1,11 @@
 import React, {FC, useState} from "react";
 import "./Home.css";
-import search from "../../images/search-icon.png";
-import like from "../../images/like-icon.png";
-import basket from "../../images/basket-icon.png";
-import centerImage from "../../images/center-picture.png";
-import wallPaper from "../../images/wallpaper-main.png";
+import * as S from "./styled";
+import search from "../../../public/assets/images/search-icon.png";
+import like from "../../../public/assets/images/like-icon.png";
+import basket from "../../../public/assets/images/basket-icon.png";
+import centerImage from "../../../public/assets/images/center-picture.png";
+import wallPaper from "../../../public/assets/images/wallpaper-main.png";
 
 const Home:FC = ()=> {
 
@@ -12,51 +13,51 @@ const Home:FC = ()=> {
 
   return (
     <div>
-      <header>
-        <div className="container">
-          <nav className="nav">
-            <ul className="language-toggle">
-              <li className="language-item" onClick={() => setLanguage(true)}>
+      <S.Header>
+        <S.Container>
+          <S.Nav>
+            <S.LanguageToggle>
+              <S.LanguageItem onClick={() => setLanguage(true)}>
                 {language ?
-                  <div>
-                    <div className="ellipse"></div>
-                    <div className=" language-active">en</div>
-                  </div>
-                  : <div className="language">en</div>
+                  <S.WrapperEllipse>
+                    <S.Ellipse></S.Ellipse>
+                    <S.LanguageActive>en</S.LanguageActive>
+                  </S.WrapperEllipse>
+                  : <S.Language>en</S.Language>
                 }
-              </li>
-              <li className="language-item" onClick={() => setLanguage(false)}>
+              </S.LanguageItem>
+              <S.LanguageItem onClick={() => setLanguage(false)}>
                 {!language ?
-                  <div>
-                    <div className="ellipse"></div>
-                    <div className=" language-active">ru</div>
-                  </div>
-                  : <div className=" language">ru</div>
+                  <S.WrapperEllipse>
+                    <S.Ellipse></S.Ellipse>
+                    <S.LanguageActive>ru</S.LanguageActive>
+                  </S.WrapperEllipse>
+                  : <S.Language>ru</S.Language>
                 }
-              </li>
-            </ul>
-            <div className="logo">
+              </S.LanguageItem>
+            </S.LanguageToggle>
+            <S.Logo>
               Yonne
-            </div>
-            <div className="list-items">
-              <a href="#" className="login-btn">
+            </S.Logo>
+            <S.ListItems>
+              <S.LoginBtn>
                 LOGIN
-              </a>
-              <div className="list-options">
-                <a className="search-btn">
-                  <img className="search-image" src={search} alt="search-picture"/>
-                </a>
+              </S.LoginBtn>
+              <S.ListOptions>
+                <S.SearchBtn>
+                  <S.SearchImage></S.SearchImage>
+                </S.SearchBtn>
                 <a className="like-btn">
                   <img className="search-image" src='' alt="like-picture"/>
                 </a>
                 <a className="basket-btn">
                   <img className="search-image" src='' alt="basket-picture"/>
                 </a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+              </S.ListOptions>
+            </S.ListItems>
+          </S.Nav>
+        </S.Container>
+      </S.Header>
       <div className="wall-paper-main">
         <img src='' className="wall-paper-image" alt="main wall paper"/>
         <div className="center-picture">

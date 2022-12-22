@@ -1,92 +1,105 @@
-@font-face {
-    font-family: 'harmondextra_bold_expanded';
-    src: url('../../../public/fonts/harmond-extraboldexpanded-webfont.woff2') format('woff2'),
-    url('../../../public/fonts/harmond-extraboldexpanded-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/*@font-face {*/
+/*    font-family: 'harmondextra_bold_expanded';*/
+/*    src: url('../../../public/fonts/harmond-extraboldexpanded-webfont.woff2') format('woff2'),*/
+/*    url('../../../public/fonts/harmond-extraboldexpanded-webfont.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
 
-}
+/*@font-face {*/
+/*    font-family: 'harmondextra_bold_expanded';*/
+/*    src: url('/fonts/harmond-extraboldexpanded-webfont.woff2') format('woff2'),*/
+/*    url('/fonts/harmond-extraboldexpanded-webfont.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
 
-.container{
-    max-width: 1920px; /*максимальная ширина или столько сколько есть места(задаем для адаптива)*/
-    margin: 0 auto; /*по центру*/
-    padding: 0 80px; /* не по плану*/
+/*@font-face {*/
+/*    font-family: "harmondextra_bold_expanded";*/
+/*    src: url(../public/fonts/harmond-extraboldexpanded-webfont.woff2);*/
+/*    font-display: swap;*/
+/*}*/
 
-    border: orange solid 1px;
-}
+/*.container{*/
+/*    max-width: 1920px; !*максимальная ширина или столько сколько есть места(задаем для адаптива)*!*/
+/*    margin: 0 auto; !*по центру*!*/
+/*    padding: 0 80px; !* не по плану*!*/
 
-header {
-    width: 100%;
-    position: absolute;
-    z-index: 20;
+/*    border: orange solid 1px;*/
+/*}*/
 
-    color: #ffffff;
-}
+/*header {*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    z-index: 20;*/
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1; /*сдвинули к центру logo/phone*/
-    flex-basis: 0; /*сдвинули к центру logo/phone*/
+/*    color: #ffffff;*/
+/*}*/
 
-    text-transform: uppercase;
-    padding: 34px 0;
-}
+/*.nav {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    flex-grow: 1; !*сдвинули к центру logo/phone*!*/
+/*    flex-basis: 0; !*сдвинули к центру logo/phone*!*/
 
-.language-toggle {
-    display: flex;
-    align-items: flex-end;
-    font-family: 'Libre Franklin', sans-serif;
-}
+/*    text-transform: uppercase;*/
+/*    padding: 34px 0;*/
+/*}*/
 
-.ellipse {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    margin-bottom: 6px;
-}
+/*.language-toggle {*/
+/*    display: flex;*/
+/*    align-items: flex-end;*/
+/*    font-family: 'Libre Franklin', sans-serif;*/
+/*}*/
 
-.language-item {
-    cursor: pointer;
-}
+/*.ellipse {*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    border-radius: 50%;*/
+/*    margin: 0 auto;*/
+/*    background-color: #ffffff;*/
+/*    margin-bottom: 6px;*/
+/*}*/
 
-.language-active {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
+/*.language-item {*/
+/*    cursor: pointer;*/
+/*}*/
 
-.language,
-.login-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
-}
+/*.language-active {*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    line-height: 24px;*/
+/*}*/
 
-.language-item:nth-child(2) {
-    margin-left: 24px;
-}
+/*.language,*/
+/*.login-btn {*/
+/*    font-weight: 500;*/
+/*    font-size: 16px;*/
+/*    line-height: 24px;*/
+/*    color: #ffffff;*/
+/*}*/
 
-.logo {
-    font-family: 'Rany', sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 32px;
-    padding-left: 10rem;
-}
+/*.language-item:nth-child(2) {*/
+/*    margin-left: 24px;*/
+/*}*/
 
-.list-items {
-    display: flex;
-    align-items: center;
-}
+/*.logo {*/
+/*    font-family: 'Rany', sans-serif;*/
+/*    font-weight: 300;*/
+/*    font-size: 36px;*/
+/*    line-height: 32px;*/
+/*    padding-left: 10rem;*/
+/*}*/
 
-.search-btn {
-    margin-left: 60px;
-}
+/*.list-items {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.search-btn {*/
+/*    margin-left: 60px;*/
+/*}*/
 
 .like-btn,
 .basket-btn {
