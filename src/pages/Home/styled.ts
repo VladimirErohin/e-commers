@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {theme} from "../../shared/theme";
-import SearchIcon from "/assets/images/search-icon.png"
 
 export const Container = styled.div`
   max-width: 1920px; /*максимальная ширина или столько сколько есть места(задаем для адаптива)*/
@@ -94,14 +93,14 @@ export const ListItems = styled.div`
 `;
 
 export const ListOptions = styled.div`
-display: flex;
+  display: flex;
 `;
 
 export const SearchBtn = styled.a`
 `;
 
 export const SearchImage = styled.div`
-background-image: url("/assets/images/search-icon.png");
+  background-image: url("/assets/images/search-icon.png");
   width: 24px;
   height: 24px;
   margin-left: 60px;
@@ -109,4 +108,88 @@ background-image: url("/assets/images/search-icon.png");
 
 export const LikeBtn = styled.a`
   margin-left: 28px;
+`;
+
+export const LikeImage = styled.div`
+  background-image: url("/assets/images/like-icon.png");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+`;
+
+export const BasketBtn = styled(LikeBtn)`
+
+`;
+
+export const BasketImage = styled.div`
+  background-image: url("/assets/images/basket-icon.png");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+`;
+
+export const WallPaperMain = styled.div`
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  width: 100%;
+
+`;
+
+export const WallPaperImage = styled.div`
+  background-image: url("/assets/images/wallpaper-main.png");
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+`;
+
+export const CentrePicture = styled.div`
+  
+  //position: absolute;
+  ////z-index: 11;
+  //display: flex;
+  ////padding: 8rem 20rem 100px;
+  //justify-content: center;
+  ////top: 1rem;
+  //align-items: flex-end;
+  //
+  //width: 100%;
+  //height: 100%;
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 56%;
+  height: 76%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  
+  margin-top: 1rem;
+`;
+
+export const CentreImage = styled.div`
+  background-image: url("/assets/images/center-picture.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-top: 166px; */
+  width: 100%;
+  height: 100%;
+`;
+
+export const PictureTitle = styled.div`
+  font-family: 'harmondextra_bold_expanded';
+  font-weight: 800;
+  font-size: 60px;
+  color: #FBFBFB;
 `;
