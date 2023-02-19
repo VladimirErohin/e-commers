@@ -17,3 +17,5 @@ const FontStyles = createGlobalStyle`
 `;
 
 export default FontStyles;
+
+// link to article for global fonts https://www.clairecodes.com/blog/2021-02-01-font-face-and-styled-components/

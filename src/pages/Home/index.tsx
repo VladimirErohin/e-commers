@@ -1,12 +1,6 @@
 import React, {FC, useState} from "react";
 import "./Home.css";
 import * as S from "./styled";
-import search from "../../../public/assets/images/search-icon.png";
-import like from "../../../public/assets/images/like-icon.png";
-import basket from "../../../public/assets/images/basket-icon.png";
-import centerImage from "../../../public/assets/images/center-picture.png";
-import wallPaper from "../../../public/assets/images/wallpaper-main.png";
-import {BasketBtn, CentreImage, CentrePicture, WallPaperMain} from "./styled";
 
 const Home:FC = ()=> {
 
@@ -63,11 +57,11 @@ const Home:FC = ()=> {
         <S.WallPaperImage></S.WallPaperImage>
         <S.CentrePicture>
           <S.CentreImage></S.CentreImage>
+          <div className="btn-panel">
+            <div className="btn-explore">explore collections</div>
+            <div className="shop-now">shop now</div>
+          </div>
           <div className="bottom-panel">
-            <div className="btn-panel">
-              <div className="btn-explore">explore collections</div>
-              <div className="shop-now">shop now</div>
-            </div>
             {/*<div className="picture-title">Simple. Timeless.</div>*/}
             <S.PictureTitle>Simple. Timeless.</S.PictureTitle>
           </div>
