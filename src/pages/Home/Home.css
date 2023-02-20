@@ -1,30 +1,39 @@
 .bottom-panel {
+    display: flex;
+    justify-content: center;
     position: absolute;
     z-index: 12;
-    margin-bottom: 9px;
+    width: 100%;
 }
 
 .btn-panel {
     display: flex;
+    justify-content: space-between;
     position: absolute;
-    margin-bottom: 129px;
+    margin-bottom: 130px;
+    width: 100%;
+    /*padding: 0 20px; */
 }
 
-.btn-explore,
-.shop-now {
+.btn-center-image{
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
     color: #FBFBFB;
+    background-color: transparent;
+    border: transparent;
 
-    border: solid 1px #FBFBFB;
     padding: 25px 0;
     width: 292px;
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-wrapper{
+    border: solid 1px #FBFBFB;
 }
 

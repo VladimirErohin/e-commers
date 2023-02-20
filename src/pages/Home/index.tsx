@@ -1,10 +1,20 @@
 import React, {FC, useState} from "react";
 import "./Home.css";
 import * as S from "./styled";
+import {PictureTitleItem} from "./styled";
+
+type btnType = {
+  name: string,
+  active: boolean,
+}
+
+type groupBtnType = Array<btnType> ;
 
 const Home:FC = ()=> {
 
   const [language, setLanguage] = useState<boolean>(true);
+  const [activeBtn, setActiveBtn] = useState<boolean>(true);
+  const groupBtn:groupBtnType = [{name: 'explore collections', active: activeBtn}, {name: 'shop now', active: !activeBtn}];
 
   return (
     <div>
@@ -58,11 +68,15 @@ const Home:FC = ()=> {
         <S.CentrePicture>
           <S.CentreImage></S.CentreImage>
           <div className="btn-panel">
-            <div className="btn-explore">explore collections</div>
-            <div className="shop-now">shop now</div>
+            {groupBtn.map(btn=><div className={btn.active ? "btn-wrapper" : ""}>
+              <button
+                className="btn-center-image"
+                key={btn.name}
+                onClick={()=>setActiveBtn(!activeBtn)}
+              >{btn.name}</button>
+            </div>)}
           </div>
-          <div className="bottom-panel">
-            {/*<div className="picture-title">Simple. Timeless.</div>*/}
+          <div className="bottom-panel ">
             <S.PictureTitle>Simple. Timeless.</S.PictureTitle>
           </div>
         </S.CentrePicture>

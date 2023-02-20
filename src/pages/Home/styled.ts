@@ -168,7 +168,7 @@ export const CentrePicture = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   width: 56%;
-  height: 76%;
+  height: 78%; //76
   position: absolute;
   top: 50%;
   right: 50%;
@@ -188,8 +188,14 @@ export const CentreImage = styled.div`
 `;
 
 export const PictureTitle = styled.div`
+  display: flex;
+  justify-content: center;
   font-family: 'harmondextra_bold_expanded';
   font-weight: 800;
-  font-size: 60px;
+  font-size: 94px;
   color: #FBFBFB;
+`;
+
+export const PictureTitleItem = styled.div`
+
 `;
