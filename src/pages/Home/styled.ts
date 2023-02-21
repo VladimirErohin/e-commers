@@ -196,6 +196,41 @@ export const PictureTitle = styled.div`
   color: #FBFBFB;
 `;
 
-export const PictureTitleItem = styled.div`
+export const PanelOfButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-bottom: 130px;
+  width: 100%;
+`;
 
+export const ButtonWrapper = styled.div`
+  border: solid 1px #FBFBFB;
+  margin: 0 40px;
+`;
+
+export const ButtonOfCenterPicture = styled.button`
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FBFBFB;
+  background-color: transparent;
+  border: transparent;
+
+  padding: 25px 0;
+  width: 292px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const CenterImageTitle  = styled.div`
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 12;
+  width: 100%;
 `;

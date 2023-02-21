@@ -1,7 +1,5 @@
 import React, {FC, useState} from "react";
-import "./Home.css";
 import * as S from "./styled";
-import {PictureTitleItem} from "./styled";
 
 type btnType = {
   name: string,
@@ -15,9 +13,8 @@ const Home:FC = ()=> {
   const [language, setLanguage] = useState<boolean>(true);
   const [activeBtn, setActiveBtn] = useState<boolean>(true);
   const groupBtn:groupBtnType = [{name: 'explore collections', active: activeBtn}, {name: 'shop now', active: !activeBtn}];
-
   return (
-    <div>
+    <>
       <S.Header>
         <S.Container>
           <S.Nav>
@@ -67,24 +64,43 @@ const Home:FC = ()=> {
         <S.WallPaperImage></S.WallPaperImage>
         <S.CentrePicture>
           <S.CentreImage></S.CentreImage>
-          <div className="btn-panel">
-            {groupBtn.map(btn=><div className={btn.active ? "btn-wrapper" : ""}>
-              <button
-                className="btn-center-image"
-                key={btn.name}
-                onClick={()=>setActiveBtn(!activeBtn)}
-              >{btn.name}</button>
-            </div>)}
-          </div>
-          <div className="bottom-panel ">
+          <S.PanelOfButtons>
+            {groupBtn.map(btn=>
+                btn.active
+                  ?
+                  <S.ButtonWrapper key={btn.name}>
+                    <S.ButtonOfCenterPicture
+                      onClick={() => setActiveBtn(!activeBtn)}
+                      disabled={btn.active}
+                    >{btn.name}
+                    </S.ButtonOfCenterPicture>
+                  </S.ButtonWrapper>
+                  :
+                  <S.ButtonOfCenterPicture
+                    key={btn.name}
+                    onClick={() => setActiveBtn(!activeBtn)}
+                    disabled={btn.active}
+                  >{btn.name}
+                  </S.ButtonOfCenterPicture>
+            )}
+          </S.PanelOfButtons>
+          <S.CenterImageTitle>
             <S.PictureTitle>Simple. Timeless.</S.PictureTitle>
-          </div>
+          </S.CenterImageTitle>
         </S.CentrePicture>
       </S.WallPaperMain>
-
-    </div>
+<div className="CollectionsMain">
+  <S.Container>
+  <div className="collection-description">
+    Each collection is inspired by something special. If you are close to one item, you should definitely see the entire collection.
+  </div>
+  <div className="collection">collection1</div>
+  <div className="collection">collection2</div>
+  <div className="collection">collection3</div>
+  </S.Container>
+</div>
+    </>
   )
 }
-
 
 export default Home;
