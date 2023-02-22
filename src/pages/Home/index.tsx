@@ -1,4 +1,5 @@
 import React, {FC, useState} from "react";
+import "./Home.css";
 import * as S from "./styled";
 
 type btnType = {
@@ -89,16 +90,17 @@ const Home:FC = ()=> {
           </S.CenterImageTitle>
         </S.CentrePicture>
       </S.WallPaperMain>
-<div className="CollectionsMain">
+
   <S.Container>
-  <div className="collection-description">
-    Each collection is inspired by something special. If you are close to one item, you should definitely see the entire collection.
-  </div>
-  <div className="collection">collection1</div>
-  <div className="collection">collection2</div>
-  <div className="collection">collection3</div>
+    <div className="collections-main">
+  <div className="collection-cart">collection1</div>
+      <div className="collection-description">
+        Each collection is inspired by something special. If you are close to one item, you should definitely see the entire collection.
+      </div>
+  <div className="collection-cart">collection2</div>
+  <div className="collection-cart">collection3</div>
+    </div>
   </S.Container>
-</div>
     </>
   )
 }
