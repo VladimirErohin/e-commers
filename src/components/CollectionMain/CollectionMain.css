@@ -1,0 +1,61 @@
+.collections-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    margin-top: 130px;
+    /*height: 2658px;*/
+}
+
+.collection-cart {
+    border: solid 1px rebeccapurple;
+
+    /*height: 900px;*/
+    /*width: 815px;*/
+    width: 50%;
+}
+
+.collection-cart img {
+    width: 100%;
+}
+
+.collection-title {
+    border: solid 1px red;
+    width: 50%;
+    height: 190px;
+}
+
+.collection-title h2 {
+    font-family: 'Harmond';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #163F2B;
+}
+
+.collection_description {
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #738C80;
+
+    /*width: 670px;*/
+}
+
+.title-collection {
+    margin-top: 24px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+
+    color: #163F2B;
+}
+

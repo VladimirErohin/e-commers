@@ -1,19 +1,20 @@
 import React, {FC, useState} from "react";
 import "./Home.css";
 import * as S from "./styled";
+import {CollectionMain} from "../../components";
 
 type btnType = {
   name: string,
   active: boolean,
 }
 
-type groupBtnType = Array<btnType> ;
+type groupBtnType = Array<btnType>;
 
-const Home:FC = ()=> {
+const Home: FC = () => {
 
   const [language, setLanguage] = useState<boolean>(true);
   const [activeBtn, setActiveBtn] = useState<boolean>(true);
-  const groupBtn:groupBtnType = [{name: 'explore collections', active: activeBtn}, {name: 'shop now', active: !activeBtn}];
+  const groupBtn: groupBtnType = [{name: "explore collections", active: activeBtn}, {name: "shop now", active: !activeBtn}];
   return (
     <>
       <S.Header>
@@ -66,23 +67,23 @@ const Home:FC = ()=> {
         <S.CentrePicture>
           <S.CentreImage></S.CentreImage>
           <S.PanelOfButtons>
-            {groupBtn.map(btn=>
-                btn.active
-                  ?
-                  <S.ButtonWrapper key={btn.name}>
-                    <S.ButtonOfCenterPicture
-                      onClick={() => setActiveBtn(!activeBtn)}
-                      disabled={btn.active}
-                    >{btn.name}
-                    </S.ButtonOfCenterPicture>
-                  </S.ButtonWrapper>
-                  :
+            {groupBtn.map(btn =>
+              btn.active
+                ?
+                <S.ButtonWrapper key={btn.name}>
                   <S.ButtonOfCenterPicture
-                    key={btn.name}
                     onClick={() => setActiveBtn(!activeBtn)}
                     disabled={btn.active}
                   >{btn.name}
                   </S.ButtonOfCenterPicture>
+                </S.ButtonWrapper>
+                :
+                <S.ButtonOfCenterPicture
+                  key={btn.name}
+                  onClick={() => setActiveBtn(!activeBtn)}
+                  disabled={btn.active}
+                >{btn.name}
+                </S.ButtonOfCenterPicture>
             )}
           </S.PanelOfButtons>
           <S.CenterImageTitle>
@@ -91,16 +92,9 @@ const Home:FC = ()=> {
         </S.CentrePicture>
       </S.WallPaperMain>
 
-  <S.Container>
-    <div className="collections-main">
-  <div className="collection-cart">collection1</div>
-      <div className="collection-description">
-        Each collection is inspired by something special. If you are close to one item, you should definitely see the entire collection.
-      </div>
-  <div className="collection-cart">collection2</div>
-  <div className="collection-cart">collection3</div>
-    </div>
-  </S.Container>
+      <S.Container>
+        <CollectionMain/>
+      </S.Container>
     </>
   )
 }
