@@ -1,18 +1,45 @@
 .collections-main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     align-content: flex-start;
+    justify-content: space-between;
 
     margin-top: 130px;
     /*height: 2658px;*/
+    /*position: relative;*/
 }
 
 .collection-cart {
+    cursor: none;
     border: solid 1px rebeccapurple;
 
+    /*cursor: url("/public/assets/images/cursor.png"), auto;*/
+
     /*height: 900px;*/
+    height: 686px;
+    /*height: 524px;*/
     /*width: 815px;*/
-    width: 50%;
+    width: 46%;
+
+    position: relative;
+}
+
+.test{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 555px;
+    top: 821px;
+
+    background: rgba(225, 255, 138, 0.2);
+    /* active */
+
+    border-radius: 50%;
+
+    border: 0.5px solid #E1FF8A;
+    backdrop-filter: blur(2px);
 }
 
 .collection-cart img {
@@ -21,7 +48,6 @@
 
 .collection-title {
     border: solid 1px red;
-    width: 50%;
     height: 190px;
 }
 
@@ -43,11 +69,33 @@
     line-height: 36px;
 
     color: #738C80;
-
-    /*width: 670px;*/
 }
 
-.title-collection {
+.see-collection{
+    border: solid 1px cornflowerblue;
+
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    bottom:86px;
+    width: 100%;
+    padding: 23px 0;
+
+    background: rgba(36, 41, 52, 0.25);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(15px);
+}
+
+.name-collection {
     margin-top: 24px;
     font-family: 'Libre Franklin', sans-serif;
     font-style: normal;
@@ -58,4 +106,20 @@
 
     color: #163F2B;
 }
+
+.collections-main .collection-cart:nth-child(2){
+   margin-bottom: 880px;
+}
+
+.collections-main .collection-cart:nth-child(1){
+    margin:  280px 0;
+}
+
+.collections-main .collection-cart:nth-child(4){
+    /*position: absolute;*/
+    /*top:634px;*/
+    /*left: 826px;*/
+}
+
+
 

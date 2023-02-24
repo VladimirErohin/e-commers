@@ -167,12 +167,14 @@ export const CentrePicture = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 56%;
-  height: 78%; //76
+  width: 62%;
+  height: 80%; //76
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+
+  //cursor: url("/assets/images/cursor.png"), auto;
   
   margin-top: 1rem;
 `;
@@ -187,14 +189,14 @@ export const CentreImage = styled.div`
   height: 100%;
 `;
 
-export const PictureTitle = styled.div`
-  display: flex;
-  justify-content: center;
+export const PictureTitle = styled.div` 
   font-family: 'harmondextra_bold_expanded';
   font-weight: 800;
-  font-size: 94px;
+  font-size: 88px;
   color: #FBFBFB;
-`;
+  margin-bottom: 10px;
+  `
+;
 
 export const PanelOfButtons = styled.div`
   display: flex;
