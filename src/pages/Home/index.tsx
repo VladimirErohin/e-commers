@@ -6,7 +6,7 @@ import {CollectionMain} from "../../components";
 type btnType = {
   name: string,
   active: boolean,
-}
+};
 
 type groupBtnType = Array<btnType>;
 

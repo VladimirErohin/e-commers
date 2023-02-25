@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 0 auto; /*по центру*/
   padding: 0 80px; /* не по плану*/
 
-  border: orange solid 1px;
+  //border: orange solid 1px;
 `;
 
 export const Header = styled.header`
@@ -184,9 +184,8 @@ export const CentreImage = styled.div`
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  /* margin-top: 166px; */
   width: 100%;
-  height: 100%;
+  height: 98%;
 `;
 
 export const PictureTitle = styled.div` 

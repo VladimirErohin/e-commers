@@ -1,9 +1,19 @@
-import React, {FC, useState} from "react";
+import React, {FC} from "react";
 import "./CollectionMain.css";
+import CollectionCart from "../CollectionCart/CollectionCart";
+
+type CollectionCartType={
+  image:string,
+  name:string,
+};
+
+const collectionCarts: Array<CollectionCartType> = [
+  {image:"/assets/images/lilith-main.png", name:"Lilith"},
+  {image:"/assets/images/rose-main.png", name:"Rose"},
+  {image:"/assets/images/miranda-main.png", name:"Miranda"},
+];
 
 const CollectionMain: FC = () => {
-
-  const [showCollection, setShowCollection] = useState (false);
 
   const cursorSmall = document.querySelector(".test");
 
@@ -26,28 +36,15 @@ const CollectionMain: FC = () => {
             Each collection is inspired by something special. If you are close to one item, you should definitely see the entire collection.
           </div>
         </div>
-
         <div className="collections-main">
-
           {/*<div className="collection-cart " onMouseMove={(e)=>positionElement(e) }>*/}
-          <div className="collection-cart" >
-            <img src="/assets/images/lilith-main.png" alt="lilith"/>
-            <div className="name-collection">Lilith</div>
-            <div className="wrapper-btn"> <div className="see-collection">SEE COLLECTION</div></div>
-            <div className=" test"></div>
-          </div>
-          <div className="collection-cart" >
-            <img src="/assets/images/rose-main.png" alt="rose"/>
-            <div className="name-collection">Rose</div>
-            <div className="wrapper-btn"> <div className="see-collection">SEE COLLECTION</div></div>
-          </div>
-          <div className="collection-cart">
-            <img src="/assets/images/miranda-main.png" alt="miranda"/>
-            <div className="wrapper-btn"> <div className="see-collection">SEE COLLECTION</div></div>
-            <div className="name-collection">Miranda</div>
-          </div>
+          {collectionCarts.map(cart=><CollectionCart key={cart.name} {...cart}/>)}
+          {/*<div className="collection-cart">*/}
+          {/*  <img src="/assets/images/miranda-main.png" alt="miranda"/>*/}
+          {/*  <div className="wrapper-btn"> <div className="see-collection">SEE COLLECTION</div></div>*/}
+          {/*  <div className="name-collection">Miranda</div>*/}
+          {/*</div>*/}
         </div>
-
       </div>
     </>
   );
