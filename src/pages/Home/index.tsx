@@ -1,11 +1,11 @@
 import React, {FC, useState} from "react";
 import "./Home.css";
 import * as S from "./styled";
-import {CollectionMain} from "../../components";
+import {CollectionMain, Footer} from "../../components";
 
 type btnType = {
-  name: string,
-  active: boolean,
+  name:string,
+  active:boolean,
 };
 
 type groupBtnType = Array<btnType>;
@@ -13,7 +13,7 @@ type groupBtnType = Array<btnType>;
 const Home: FC = () => {
 
   const [language, setLanguage] = useState<boolean>(true);
-  const [activeBtn, setActiveBtn] = useState<boolean>(true);
+  const [activeBtn, setActiveBtn] = useState(true);
   const groupBtn: groupBtnType = [{name: "explore collections", active: activeBtn}, {name: "shop now", active: !activeBtn}];
   return (
     <>
@@ -95,6 +95,8 @@ const Home: FC = () => {
       <S.Container>
         <CollectionMain/>
       </S.Container>
+
+      <Footer/>
     </>
   )
 }

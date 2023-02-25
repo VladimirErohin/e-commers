@@ -1,0 +1,91 @@
+footer{
+    border: 1px solid cornflowerblue;
+    background-color: #E1FF8A;
+}
+
+.logo-footer{
+    font-family: 'Rany';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-top: 82px;
+
+    color: #163F2B;
+}
+
+.footer-content{
+    border: 1px solid #051633;
+
+    display: flex;
+    margin-top: 67px ;
+    height: 112px;
+
+    margin-bottom: 80px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+}
+.footer-content .group:nth-child(1){
+    margin-right: 157px;
+}
+
+.group:last-child{
+    margin-left: auto;
+}
+
+.wrapper-input{
+    display: flex;
+}
+.enter-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid ;
+    width: 80px;
+    height: 80px;
+    border-left: none;
+}
+
+.group input {
+    padding: 23px 81px 23px 24px;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #163F2B;
+
+    width: 326px;
+    background: transparent;
+    /*border-right: none;*/
+}
+
+/*input[type="text"]{*/
+/*    font-family: 'Libre Franklin';*/
+/*    font-style: normal;*/
+/*    font-weight: 300;*/
+/*    font-size: 16px;*/
+/*    line-height: 24px;*/
+
+/*    color: #163F2B;*/
+/*}*/
+
+.menu-item{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #163F2B;
+
+    margin-bottom: 20px;
+}
