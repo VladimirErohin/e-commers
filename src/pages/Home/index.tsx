@@ -15,6 +15,9 @@ const Home: FC = () => {
   const [language, setLanguage] = useState<boolean>(true);
   const [activeBtn, setActiveBtn] = useState(true);
   const groupBtn: groupBtnType = [{name: "explore collections", active: activeBtn}, {name: "shop now", active: !activeBtn}];
+
+  const changeActiveBtn =()=>setActiveBtn(!activeBtn);
+
   return (
     <>
       <S.Header>
@@ -72,7 +75,7 @@ const Home: FC = () => {
                 ?
                 <S.ButtonWrapper key={btn.name}>
                   <S.ButtonOfCenterPicture
-                    onClick={() => setActiveBtn(!activeBtn)}
+                    onClick={changeActiveBtn}
                     disabled={btn.active}
                   >{btn.name}
                   </S.ButtonOfCenterPicture>
@@ -80,7 +83,7 @@ const Home: FC = () => {
                 :
                 <S.ButtonOfCenterPicture
                   key={btn.name}
-                  onClick={() => setActiveBtn(!activeBtn)}
+                  onClick={changeActiveBtn}
                   disabled={btn.active}
                 >{btn.name}
                 </S.ButtonOfCenterPicture>

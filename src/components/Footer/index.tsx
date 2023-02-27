@@ -1,40 +1,42 @@
 import React, {FC} from "react";
-import "./Footer.css";
-import * as S from "../../pages/Home/styled";
+import * as St from "../../pages/Home/styled";
+import * as S from "./styled";
 
-
-const menuFooterItems: Array<string> = ["shop", "collection", "about"];
-const testItems: Array<string> = ["shipping & returns", "terms of use", "privacy policy"];
+const firsColumnItems: Array<string> = ["shop", "collection", "about"];
+const secondColumnItems: Array<string> = ["shipping & returns", "terms of use", "privacy policy"];
 
 const Footer: FC = () => {
   return (
-    <footer>
-      <S.Container>
-        <div className="logo-footer">
+    <S.Footer>
+      <St.Container>
+        <S.LogoFooter>
           yonne
-        </div>
-        <div className="footer-content">
-          <div className="group">
-            {menuFooterItems.map(item => <div key={item} className="menu-item">{item}</div>)}
-          </div>
-          <div className="group">
-            {testItems.map(item => <div key={item} className="menu-item">{item}</div>)}
-          </div>
-          <div className="group">
-            <div className="wrapper-input">
-              <input
+        </S.LogoFooter>
+        <S.FooterContent>
+          <S.Group>
+            {firsColumnItems.map(item => <S.MenuItem key={item} >{item}</S.MenuItem>)}
+          </S.Group>
+          <S.Group>
+            {secondColumnItems.map(item => <S.MenuItem key={item}>{item}</S.MenuItem>)}
+          </S.Group>
+          <S.Group>
+            <S.WrapperInput>
+              <S.Input
                 type="text"
                 placeholder="Enter your email to subscribe"
               />
-              <div className="enter-btn"><img src='/assets/images/Vector.png' alt="vector"/></div>
-            </div>
-
-            <div className="social-network">social network</div>
-          </div>
-        </div>
-
-      </S.Container>
-    </footer>
+              <S.EnterBtn><S.Image src='/assets/images/Vector.png' alt="vector"/></S.EnterBtn>
+            </S.WrapperInput>
+            <S.SocialNetwork>
+              <S.ImageSN src="/assets/images/mail-icon.png" alt="email"/>
+              <S.ImageSN src="/assets/images/instagram-icon.png" alt="email"/>
+              <S.ImageSN src="/assets/images/facebook-icon.png" alt="email"/>
+              </S.SocialNetwork>
+          </S.Group>
+        </S.FooterContent>
+        <S.Rights>© 2021 Yonne. All rights reserved.</S.Rights>
+      </St.Container>
+    </S.Footer>
   );
 };
 export default Footer;

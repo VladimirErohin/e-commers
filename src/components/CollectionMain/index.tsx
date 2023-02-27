@@ -15,18 +15,6 @@ const collectionCarts: Array<CollectionCartType> = [
 
 const CollectionMain: FC = () => {
 
-  const cursorSmall = document.querySelector(".test");
-
-  const positionElement = (e: { clientY: any; clientX: any; }) => {
-    const mouseY = e.clientY;
-    const mouseX = e.clientX;
-
-    // @ts-ignore
-    cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-
-    console.log(mouseY, mouseX);
-  }
-
   return (
     <>
       <div className="wrapper-main">
@@ -37,13 +25,7 @@ const CollectionMain: FC = () => {
           </div>
         </div>
         <div className="collections-main">
-          {/*<div className="collection-cart " onMouseMove={(e)=>positionElement(e) }>*/}
           {collectionCarts.map(cart=><CollectionCart key={cart.name} {...cart}/>)}
-          {/*<div className="collection-cart">*/}
-          {/*  <img src="/assets/images/miranda-main.png" alt="miranda"/>*/}
-          {/*  <div className="wrapper-btn"> <div className="see-collection">SEE COLLECTION</div></div>*/}
-          {/*  <div className="name-collection">Miranda</div>*/}
-          {/*</div>*/}
         </div>
       </div>
     </>

@@ -1,6 +1,5 @@
 .wrapper-main{
     margin-top: 130px;
-
 }
 
 .collection-title {
@@ -28,36 +27,12 @@
     justify-content: space-between;
 }
 
-.test-image{
-
-}
-
 .collection-cart {
-    /*cursor: none;*/
     /*border: solid 1px rebeccapurple;*/
 
     /*height: 900px;*/
     width: 46%;
     position: relative;
-
-}
-
-.test{
-    box-sizing: border-box;
-
-    position: absolute;
-    z-index: 2;
-    width: 17px;
-    height: 17px;
-    left: 555px;
-    top: 821px;
-
-    background: rgba(225, 255, 138, 0.2);
-
-    border-radius: 50%;
-
-    border: 0.5px solid #E1FF8A;
-    backdrop-filter: blur(2px);
 }
 
 .collection-cart img {

@@ -173,8 +173,6 @@ export const CentrePicture = styled.div`
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-
-  cursor: url("/assets/images/cursor.svg"), auto;
   
   margin-top: 1rem;
 `;
@@ -211,7 +209,7 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const ButtonOfCenterPicture = styled.button`
-  cursor: url("/assets/images/cursor.svg"), auto;
+  cursor: pointer;
   
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
