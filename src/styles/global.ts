@@ -10,9 +10,9 @@ const FontStyles = createGlobalStyle`
        font-style: normal;
      };
 
-     @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Manrope:wght@200&display=swap');*/
+     @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Manrope:wght@200&display=swap');
      @import url(
-     'https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Libre+Franklin:wght@300;400;500;600&family=Manrope:wght@200&display=swap'*/
+     'https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Libre+Franklin:wght@300;400;500;600&family=Manrope:wght@200&display=swap'
      );
 `;
 

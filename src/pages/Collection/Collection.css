@@ -1,0 +1,43 @@
+.main-wallpaper {
+    /*position: relative;*/
+    /*width: 1920px;*/
+    height: 666px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    background-image: url("../../img-test/miranda-wallpaper.png");
+}
+
+.name-collection {
+    margin-bottom: 7rem;
+
+    font-family: 'Harmond';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FBFBFB;
+}
+
+.content {
+    position: absolute;
+    width: 40%;
+    height: 108px;
+    margin-top: 8rem;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #FBFBFB;
+}

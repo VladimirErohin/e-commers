@@ -15,6 +15,10 @@ export const Header = styled.header`
   z-index: 20;
 
   color: #ffffff;
+
+  //position: fixed;
+  //z-index: 20;
+  //background-color: #738C80;
 `;
 
 export const Nav = styled.nav`
