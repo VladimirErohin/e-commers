@@ -1,8 +1,7 @@
 import React, {useState} from "react";
-import Home from "./pages/Home/index";
 import * as S from "./pages/Home/styled";
 import {Footer} from "./components";
-import Collection from "./pages/Collection";
+import {Collection} from "./pages";
 
 function App() {
 
