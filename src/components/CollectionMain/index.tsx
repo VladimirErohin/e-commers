@@ -2,12 +2,12 @@ import React, {FC} from "react";
 import "./CollectionMain.css";
 import CollectionCart from "../CollectionCart/CollectionCart";
 
-type CollectionCartType={
+type CollectionType={
   image:string,
   name:string,
 };
 
-const collectionCarts: Array<CollectionCartType> = [
+const collectionCarts: Array<CollectionType> = [
   {image:"/assets/images/lilith-main.png", name:"Lilith"},
   {image:"/assets/images/rose-main.png", name:"Rose"},
   {image:"/assets/images/miranda-main.png", name:"Miranda"},
