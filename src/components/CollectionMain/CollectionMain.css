@@ -27,56 +27,56 @@
     justify-content: space-between;
 }
 
-.collection-cart {
-    /*border: solid 1px rebeccapurple;*/
+/*.collection-cart {*/
+/*    !*border: solid 1px rebeccapurple;*!*/
 
-    /*height: 900px;*/
-    width: 46%;
-    position: relative;
-}
+/*    !*height: 900px;*!*/
+/*    width: 46%;*/
+/*    position: relative;*/
+/*}*/
 
-.collection-cart img {
-    width: 100%;
-}
+/*.collection-cart img {*/
+/*    width: 100%;*/
+/*}*/
 
-.collection_description {
-    font-family: 'Libre Franklin', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+/*.collection_description {*/
+/*    font-family: 'Libre Franklin', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-size: 24px;*/
+/*    line-height: 36px;*/
 
-    color: #738C80;
-}
+/*    color: #738C80;*/
+/*}*/
 
-.see-collection{
-    display: none;
+/*.see-collection{*/
+/*    display: none;*/
 
-    font-family: 'Libre Franklin', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+/*    font-family: 'Libre Franklin', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-size: 16px;*/
+/*    line-height: 24px;*/
+/*    text-align: center;*/
+/*    letter-spacing: 0.06em;*/
+/*    text-transform: uppercase;*/
 
-    color: #FFFFFF;
+/*    color: #FFFFFF;*/
 
-    position: absolute;
-    bottom:86px;
-    width: 90%;
-    padding: 23px 0;
+/*    position: absolute;*/
+/*    bottom:86px;*/
+/*    width: 90%;*/
+/*    padding: 23px 0;*/
 
-    background: rgba(36, 41, 52, 0.25);
-    background-blend-mode: overlay, normal;
-    backdrop-filter: blur(15px);
-}
+/*    background: rgba(36, 41, 52, 0.25);*/
+/*    background-blend-mode: overlay, normal;*/
+/*    backdrop-filter: blur(15px);*/
+/*}*/
 
-.wrapper-btn{
-    display: flex;
-    justify-content: center;
-}
+/*.wrapper-btn{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
 .name-collection {
     margin-top: 24px;
@@ -90,9 +90,9 @@
     color: #163F2B;
 }
 
-.collection-cart:hover .see-collection{
-display: block;
-}
+/*.collection-cart:hover .see-collection{*/
+/*display: block;*/
+/*}*/
 
 .collections-main .collection-cart:nth-child(2){
    margin-bottom: 880px;

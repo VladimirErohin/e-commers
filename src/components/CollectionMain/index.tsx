@@ -1,6 +1,7 @@
 import React, {FC} from "react";
 import "./CollectionMain.css";
-import CollectionCart from "../CollectionCart/CollectionCart";
+import {CollectionItem} from "../index";
+
 
 type CollectionType={
   image:string,
@@ -25,7 +26,7 @@ const CollectionMain: FC = () => {
           </div>
         </div>
         <div className="collections-main">
-          {collectionCarts.map(cart=><CollectionCart key={cart.name} {...cart}/>)}
+          {collectionCarts.map(cart=><CollectionItem key={cart.name} {...cart}/>)}
         </div>
       </div>
     </>
