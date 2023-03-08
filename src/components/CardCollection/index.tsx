@@ -1,18 +1,25 @@
-import React from "react";
+import React, {FC} from "react";
 import Rating from "@mui/material/Rating";
+import * as S from './styled';
 
+type CardTypeProp ={
+  imgCard:string,
+  rating: number,
+  collectionName: string,
+  price:number
+}
 
-const CardCollection = () => {
+const CardCollection:FC<CardTypeProp> = ({imgCard,rating,price,collectionName,}) => {
   return (
-    <div className="card">
-      <div className="img-card"><img src="/assets/images/collections/card-one.png" alt=""/></div>
-      <div className="rating">
+    <S.CardCollection>
+      <S.ImageCard src={imgCard} alt="cardImage"/>
+      <S.Rating>
         <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly sx={{color: "#163F2B"}}/>
-        <div className="rating-count">4.8 (38)</div>
-      </div>
-      <div className="title-collection">Miranda Bold Hoops</div>
-      <div className="price-collection">$124</div>
-    </div>
+        <S.RatingCount>4.8 (38)</S.RatingCount>
+      </S.Rating>
+      <S.TitleCollection>Miranda Bold Hoops</S.TitleCollection>
+      <S.PriceCollection>$124</S.PriceCollection>
+    </S.CardCollection>
   );
 };
 

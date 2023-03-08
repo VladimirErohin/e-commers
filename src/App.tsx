@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import * as S from "./pages/Home/styled";
 import {Footer} from "./components";
-import {Home} from "./pages";
-//import {Collection} from "./pages";
+//import {Home} from "./pages";
+import {Collection} from "./pages";
 
 function App() {
 
@@ -56,8 +56,8 @@ function App() {
         </S.Container>
       </S.Header>
 
-      {/*<Collection/>*/}
-      <Home/>
+      <Collection/>
+      {/*<Home/>*/}
 
       <Footer/>
     </>
