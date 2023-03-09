@@ -1,17 +1,44 @@
-import React, {FC} from "react";
-import "./Pgination.css";
+import React, {FC, useState} from "react";
+import * as S from './styled';
 
 const Pagination: FC = () => {
+
+  const pages:number [] = [1, 2, 3];
+  const [currentPage, setCurrentPage] = useState<number>(1);
+
+  const handlerPage = (page: number) => {
+    if (currentPage !== page) {
+      setCurrentPage(page)
+    }
+  };
+
+  const toNextPage = () => {
+    if(currentPage===3){
+      return
+    }else{ setCurrentPage(currentPage + 1)}
+  };
+
+  const toPrevPage = () => {
+    if(currentPage===1){
+      return
+    }else{ setCurrentPage(currentPage - 1)}
+  };
+
   return (
-    <div className="pagination">
-      <div className="left"><img src="/assets/images/pagination.png" alt=""/></div>
-      <div className="pages">
-        <div className="page active">1</div>
-        <div className="page">2</div>
-        <div className="page">3</div>
-      </div>
-      <div className="right"><img src="/assets/images/pagination.png" alt=""/></div>
-    </div>
+    <S.Pagination>
+      <S.Left disabled = {currentPage===1} onClick={toPrevPage}><S.Image src="/assets/images/pagination.png" alt="left"/></S.Left>
+      <S.Pages>
+        {pages.map(page => <S.Page
+          activePage={page === currentPage}
+          key={page}
+          onClick={() => handlerPage(page)}
+        >{page}</S.Page>)}
+      </S.Pages>
+      <S.Right
+        disabled={currentPage===3}
+        onClick={toNextPage}
+      ><S.Image src="/assets/images/pagination.png" alt="right"/></S.Right>
+    </S.Pagination>
   );
 };
 

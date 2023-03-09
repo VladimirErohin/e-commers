@@ -3,7 +3,6 @@ import "./Collection.css";
 import {Container} from "../Home/styled";
 import {CardCollection, Input, Pagination} from "../../components";
 
-
 export type CardInfoType = {
   imgCard: string,
   rating: number,
@@ -22,7 +21,6 @@ export const cardsInfo: CardInfoType [] = [
   {imgCard: "/assets/images/collections/card-eight.png", rating: 4.8, collectionName: "Miranda Bold Hoops", price: 124,},
   {imgCard: "/assets/images/collections/card-nine.png", rating: 4.8, collectionName: "Miranda Bold Hoops", price: 124,},
 ];
-
 
 const Collection: FC = () => {
 
@@ -50,7 +48,6 @@ const Collection: FC = () => {
         </div>
         <Pagination/>
       </Container>
-
     </>
   );
 };
