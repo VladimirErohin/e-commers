@@ -1,7 +1,7 @@
 import React, {FC} from "react";
-import "./Collection.css";
 import {Container} from "../Home/styled";
 import {CardCollection, Input, Pagination} from "../../components";
+import * as S from './styled';
 
 export type CardInfoType = {
   imgCard: string,
@@ -26,26 +26,26 @@ const Collection: FC = () => {
 
   return (
     <>
-      <div className="main-wallpaper">
-        <div className="name-collectionCard">Miranda</div>
-        <div className="content">
+      <S.MainWallpaper>
+        <S.NameCollectionCard>Miranda</S.NameCollectionCard>
+        <S.Content>
           Our collection-building process is like carrying a baby. We try to give it the best and make it independent Our collection-building process
           is like carrying a baby.
-        </div>
-        <div className="show-path">
-          <span>Home /</span>
-          <span>Collections /</span>
-          <span>Miranda Collections /</span>
-        </div>
-      </div>
+        </S.Content>
+        <S.ShowPath>
+          <S.Span>Home /</S.Span>
+          <S.Span>Collections /</S.Span>
+          <S.Span>Miranda Collections /</S.Span>
+        </S.ShowPath>
+      </S.MainWallpaper>
       <Container>
-        <div className="collection-select">
+        <S.CollectionSelect>
           <Input placeholderInput="Miranda Collection" imageSrc="/assets/images/vector-down.png"/>
           <Input placeholderInput="Sorted by date (first new)" imageSrc="/assets/images/vector-down.png"/>
-        </div>
-        <div className="collection-cards">
+        </S.CollectionSelect>
+        <S.CollectionCards>
           {cardsInfo.map(card => <CardCollection key={card.imgCard} {...card}/>)}
-        </div>
+        </S.CollectionCards>
         <Pagination/>
       </Container>
     </>

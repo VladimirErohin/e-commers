@@ -11,10 +11,11 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   width: 100%;
-  position: absolute;
+  //position: absolute;  //*
   z-index: 20;
 
-  color: #ffffff;
+  //color: #ffffff;         //*
+  border-bottom: 0.5px solid #E0E5E3;
 
   //position: fixed;
   //z-index: 20;
@@ -104,7 +105,7 @@ export const SearchBtn = styled.a`
 `;
 
 export const SearchImage = styled.div`
-  background-image: url("/assets/images/search-icon.png");
+  background-image: url("/assets/images/search-icon-black.png");//url("/assets/images/search-icon.png");
   width: 24px;
   height: 24px;
   margin-left: 60px;
@@ -115,7 +116,7 @@ export const LikeBtn = styled.a`
 `;
 
 export const LikeImage = styled.div`
-  background-image: url("/assets/images/like-icon.png");
+  background-image: url("/assets/images/like-icon-black.png");//url("/assets/images/like-icon.png");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -126,7 +127,7 @@ export const BasketBtn = styled(LikeBtn)`
 `;
 
 export const BasketImage = styled.div`
-  background-image: url("/assets/images/basket-icon.png");
+  background-image: url("/assets/images/basket-icon-black.png");//url("/assets/images/basket-icon.png");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -194,7 +195,7 @@ export const PictureTitle = styled.div`
   font-family: 'harmondextra_bold_expanded';
   font-weight: 800;
   font-size: 88px;
-  color: #FBFBFB;
+  //color: #FBFBFB;   //1
   margin-bottom: 10px;
   `
 ;
@@ -220,7 +221,7 @@ export const ButtonOfCenterPicture = styled.button`
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FBFBFB;
+  //color: #FBFBFB;                // 2
   background-color: transparent;
   border: transparent;
 

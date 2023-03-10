@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import * as S from "./pages/Home/styled";
 import {Footer} from "./components";
+import {ItemPage} from "./pages";
 //import {Home} from "./pages";
-import {Collection} from "./pages";
+//import {Collection} from "./pages";
 
 function App() {
 
@@ -55,10 +56,9 @@ function App() {
           </S.Nav>
         </S.Container>
       </S.Header>
-
-      <Collection/>
+      {/*<Collection/>*/}
       {/*<Home/>*/}
-
+      <ItemPage/>
       <Footer/>
     </>
   );
