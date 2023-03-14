@@ -1,3 +1,3 @@
 export {default as Home} from "./Home";
-export {default as Collection} from "./Collection";
-export {default as ItemPage} from "./ItemPage";
+export {default as CardItem} from "./CardItem";
+export {default as OrderPage} from "./OrderPage";

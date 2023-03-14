@@ -12,7 +12,7 @@ import * as S from "./styled";
 //   {image:"/assets/images/miranda-main.png", name:"Miranda"},
 // ];
 
-const CollectionMain: FC = () => {
+const CardPreview: FC = () => {
 
   return (
     <>
@@ -51,4 +51,4 @@ const CollectionMain: FC = () => {
   );
 };
 
-export default CollectionMain;
+export default CardPreview;

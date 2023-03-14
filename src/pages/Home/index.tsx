@@ -1,6 +1,6 @@
 import React, {FC, useState} from "react";
 import * as S from "./styled";
-import {CollectionMain, Footer} from "../../components";
+import {CardPreview, Footer} from "../../components";
 
 type btnType = {
   name:string,
@@ -49,7 +49,7 @@ const Home: FC = () => {
       </S.WallPaperMain>
 
       <S.Container>
-        <CollectionMain/>
+        <CardPreview/>
       </S.Container>
 
     </>

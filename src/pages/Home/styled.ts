@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   width: 100%;
-  //position: absolute;  //*
+  //position: absolute; //*
   z-index: 20;
 
   //color: #ffffff;         //*
@@ -105,7 +105,7 @@ export const SearchBtn = styled.a`
 `;
 
 export const SearchImage = styled.div`
-  background-image: url("/assets/images/search-icon-black.png");//url("/assets/images/search-icon.png");
+  background-image: url("/assets/images/search-icon-black.png"); //url("/assets/images/search-icon.png");
   width: 24px;
   height: 24px;
   margin-left: 60px;
@@ -116,7 +116,7 @@ export const LikeBtn = styled.a`
 `;
 
 export const LikeImage = styled.div`
-  background-image: url("/assets/images/like-icon-black.png");//url("/assets/images/like-icon.png");
+  background-image: url("/assets/images/like-icon-black.png"); //url("/assets/images/like-icon.png");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -127,7 +127,7 @@ export const BasketBtn = styled(LikeBtn)`
 `;
 
 export const BasketImage = styled.div`
-  background-image: url("/assets/images/basket-icon-black.png");//url("/assets/images/basket-icon.png");
+  background-image: url("/assets/images/basket-icon-black.png"); //url("/assets/images/basket-icon.png");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ export const WallPaperImage = styled.div`
 `;
 
 export const CentrePicture = styled.div`
-  
+
   //position: absolute;
   ////z-index: 11;
   //display: flex;
@@ -165,7 +165,7 @@ export const CentrePicture = styled.div`
   //
   //width: 100%;
   //height: 100%;
-  
+
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -178,7 +178,7 @@ export const CentrePicture = styled.div`
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  
+
   margin-top: 1rem;
 `;
 
@@ -191,12 +191,12 @@ export const CentreImage = styled.div`
   height: 98%;
 `;
 
-export const PictureTitle = styled.div` 
-  font-family: 'harmondextra_bold_expanded';
-  font-weight: 800;
-  font-size: 88px;
-  //color: #FBFBFB;   //1
-  margin-bottom: 10px;
+export const PictureTitle = styled.div`
+          font-family: 'harmondextra_bold_expanded';
+          font-weight: 800;
+          font-size: 88px;
+          //color: #FBFBFB;   //1
+          margin-bottom: 10px;
   `
 ;
 
@@ -215,7 +215,7 @@ export const ButtonWrapper = styled.div`
 
 export const ButtonOfCenterPicture = styled.button`
   cursor: pointer;
-  
+
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -233,7 +233,7 @@ export const ButtonOfCenterPicture = styled.button`
   align-items: center;
 `;
 
-export const CenterImageTitle  = styled.div`
+export const CenterImageTitle = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;

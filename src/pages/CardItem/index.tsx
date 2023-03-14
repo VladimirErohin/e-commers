@@ -22,7 +22,7 @@ export const cardsInfo: CardInfoType [] = [
   {imgCard: "/assets/images/collections/card-nine.png", rating: 4.8, collectionName: "Miranda Bold Hoops", price: 124,},
 ];
 
-const Collection: FC = () => {
+const CardItem: FC = () => {
 
   return (
     <>
@@ -52,4 +52,4 @@ const Collection: FC = () => {
   );
 };
 
-export default Collection;
+export default CardItem;
