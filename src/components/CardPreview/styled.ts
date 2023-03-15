@@ -20,6 +20,11 @@ export const CollectionTitle = styled.div`
   right: 80px;
 `;
 
+export const WrapperBtn = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const SeeCollection = styled.div`
 
   display: none;
@@ -84,12 +89,6 @@ export const CollectionDescription = styled.div`
 
   color: #738C80;
 `;
-
-export const WrapperBtn = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 
 export const CollectionName = styled.div`
   margin-top: 24px;

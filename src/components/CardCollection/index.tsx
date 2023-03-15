@@ -13,6 +13,9 @@ const CardCollection:FC<CardTypeProp> = ({imgCard,rating,price,collectionName,})
   return (
     <S.CardCollection>
       <S.ImageCard src={imgCard} alt="cardImage"/>
+      <S.WrapperBtnCard>
+        <S.AddToCartBtn>add to card | $124</S.AddToCartBtn>
+      </S.WrapperBtnCard>
       <S.Rating>
         <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly sx={{color: "#163F2B"}}/>
         <S.RatingCount>4.8 (38)</S.RatingCount>
