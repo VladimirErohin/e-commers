@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import * as S from "./pages/Home/styled";
+import {Cart} from "./pages";
 //import {Footer} from "./components";
-import {OrderPage} from "./pages";
+//import {OrderPage} from "./pages";
 //import {Home} from "./pages";
 //import {CardItem} from "./pages";
 
@@ -59,7 +60,8 @@ function App() {
 
       {/*<CardItem/>*/}
       {/*<Home/>*/}
-      <OrderPage/>
+      {/*<OrderPage/>*/}
+      <Cart/>
       {/*<Footer/>*/}
     </>
   );

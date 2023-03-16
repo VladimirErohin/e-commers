@@ -3,27 +3,28 @@ import "./ItemPage.css";
 import * as S from "./styled";
 import Rating from "@mui/material/Rating";
 
+type IsShowType = {
+  [key: string]: boolean
+};
+
 const OrderPage: FC = () => {
 
   const [isActive, setIsActive] = useState<boolean>(true);
-  //const [isShow, setIsShow] = useState<boolean>(true);
-  const [isShow, setIsShow] = useState({description: false, care: false, deliver: false});
+  const [isShow, setIsShow] = useState<IsShowType>({description: false, care: false, deliver: false});
   const handleActive = () => setIsActive(!isActive);
-  //const handleShowDescription = () => setIsShow(!isShow);
 
-  const handleShowDescription = (item: string) => {
-    // @ts-ignore
-    let val = isShow[item]
+  const handleShowDescription = (item: string)=> {
+
+    let valueForShow = isShow[item];
 
     for (let key in isShow) {
-      // @ts-ignore
       if (isShow[key]) {
-        // @ts-ignore
         isShow[key] = false
       }
     }
-    setIsShow({...isShow, [item]: !val})
+    setIsShow({ ...isShow, [item]: !valueForShow})
   };
+
 
   return (
     <>
@@ -122,7 +123,9 @@ const OrderPage: FC = () => {
                 <S.DescriptionSummaryItem>  EU delivery date in 1-5 days.</S.DescriptionSummaryItem>
               </S.DescriptionSummary>
             </S.Description>
+
           </S.ListOrderInfo>
+          <S.OrderPageButton>Add to cart | 124$</S.OrderPageButton>
         </S.InfoOrder>
 
       </S.ItemPage>

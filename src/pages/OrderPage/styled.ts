@@ -10,8 +10,9 @@ export const PictureItem = styled.div`
   align-items: center;
 
   width: 50%;
-  height: 100vh;
+  height: 68rem;
   background-image: url("/assets/images/shop.png");
+  background-size: cover;
 
 `;
 
@@ -104,11 +105,9 @@ export const OrderPagePrice = styled.div`
 
 export const Rating = styled.div`
   display: flex;
-  //margin-top: 24px;
 `;
 
 export const RatingCount = styled.div`
-  //margin-left: 10px;
   color: ${theme.colors.green};
 `;
 
@@ -206,7 +205,7 @@ export const ListOrderInfo = styled.div`
 `;
 
 export const Description = styled.div`
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 16px 0;
@@ -218,9 +217,6 @@ export const DescriptionWrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  //padding: 16px 0;
-
-  //border-bottom: 1px solid #163F2B;
 `;
 
 export const DescriptionTitle = styled.div`
@@ -248,7 +244,7 @@ type ShowType = {
 };
 
 export const DescriptionOpen = styled.div<ShowType>`
-display: ${({isShow}) => !isShow ? "block" : "none"}; `;
+  display: ${({isShow}) => !isShow ? "block" : "none"}; `;
 
 export const DescriptionClose = styled.div<ShowType>`
   display: ${({isShow}) => isShow ? "block" : "none"};
@@ -268,5 +264,27 @@ export const DescriptionSummaryItem = styled.div`
   line-height: 24px;
 
   color: #738C80;
+`;
+
+export const OrderPageButton = styled.div`
+  position: relative;
+  top: 32rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${theme.colors.green};
+  height: 70px;
+
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #FBFBFB;
 `;
 
