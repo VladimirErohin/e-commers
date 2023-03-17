@@ -1,5 +1,4 @@
 import React, {FC, useState} from "react";
-import "./ItemPage.css";
 import * as S from "./styled";
 import Rating from "@mui/material/Rating";
 

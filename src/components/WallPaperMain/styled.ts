@@ -5,8 +5,10 @@ export const WallPaperMain = styled.div`
   justify-content: center;
 
   position: relative;
+  //z-index: 22;
   width: 100%;
 
+  //background: rgba(22, 63, 43, 0.4);
 `;
 
 export const WallPaperImage = styled.div`
@@ -48,6 +50,7 @@ export const CentrePicture = styled.div`
 
   margin-top: 1rem;
 `;
+
 
 
 export const CentreImage = styled.div`
@@ -106,5 +109,4 @@ export const PictureTitle = styled.div`
           font-size: 88px;
           color: #FBFBFB;   //1
           margin-bottom: 10px;
-  `
-;
+`;
